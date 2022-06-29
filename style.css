@@ -1,0 +1,217 @@
+:root {
+    --raleway: 'Raleway', sans-serif;
+    --merriweather: 'Merriweather', sans-serif;
+    --montserrat: 'Montserrat', sans-serif;
+    --weight-bold: 700;
+    --weight-medium: 500;
+    --weight-regular: 500;
+    --font-size-regular: 20px;
+    --dark-blue: #205375;
+    --blue: #21ecde;
+    --white: #ffffff;
+    --orange: #FFB562;
+    --light: #e3e2e2;
+    --light-gray: #DDDDDD;
+    --shadow: #cccccc;
+}
+
+
+html {
+    scroll-behavior: smooth;
+    font-size: var(--font-size-regular);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 4rem;
+    background-color: var(--dark-blue);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.links {
+    margin: 0 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1.7rem;
+}
+
+.links__item {
+    font-family: var(--montserrat);
+    font-weight: var(--weight-medium);
+    color: var(--white);
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.links__item:hover {
+    transform: scale(1.05);
+    color: var(--orange);
+}
+
+.links a:active {
+    color: var(--orange);
+}
+
+.content-wrapper {
+    min-height: calc(100vh - 4rem);
+    scroll-margin-top: 4rem;
+}
+
+.about {
+    padding-top: 4rem;
+    display: flex;
+    justify-content: center;
+    column-gap: 10%;
+    align-items: center;
+    background-color: var(--light);
+}
+
+.avatar .avatar__img {
+    border-radius: 0.25rem;
+    width: 16rem;
+    height: 24rem;
+    box-shadow: 2px -6px 1rem var(--shadow);
+}
+
+.info {
+    text-align: center;
+}
+
+.info .info__name {
+    font-family: var(--raleway);
+    font-weight: var(--weight-bold);
+    font-size: 1.8rem;
+}
+
+.info .info__direction {
+    margin: 0.8rem 0;
+    font-family: var(--montserrat);
+    font-weight: var(--weight-medium);
+    font-size: 1.4rem;
+}
+
+.info .info__description {
+    font-family: var(--montserrat);
+    max-width: 20rem;
+}
+
+main .title {
+    padding: 2.5rem 0.5rem 0;
+    text-align: center;
+    font-family: var(--montserrat);
+    font-weight: var(--weight-medium);
+    font-size: 1.8rem;
+    letter-spacing: 0.08rem;
+}
+
+.skills {
+    background-color: var(--light-gray);
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-wrapper {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills__list {
+    margin: 1.5rem 0.5rem;
+    width: 41rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 3rem;
+    row-gap: 1.5rem;
+}
+
+.skills__item svg {
+    width: 8rem;
+    height: 8rem;
+}
+
+.skills__item-title {
+    margin-top: 0.2rem;
+    text-align: center;
+    font-family: var(--montserrat);
+    font-weight: var(--weight-regular);
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+}
+
+.works {
+    background-color: var(--light);
+}
+
+.works .work {
+    padding: 0.5rem;
+    box-sizing: border-box;
+    border-radius: 0.3rem;
+    box-shadow: 2px -6px 1rem var(--shadow);
+    background-color: #F9F2ED;
+    width: 18rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.work__image {
+    width: 17rem;
+    max-height: 13rem;
+    border-radius: 0.2rem;
+    transition: 0.3s;
+}
+
+.work__image:hover {
+    transform: scale(1.04,1.05);
+    cursor: pointer;
+}
+
+.work__title {
+    text-align: center;
+    font-family: var(--montserrat);
+    font-weight: var(--weight-medium);
+    font-size: 1.2rem;
+    margin-top: 0.8rem;
+}
+
+.work__info{
+    margin: 0.5rem 0.3rem;
+    font-family: var(--montserrat);
+    font-size: 0.9rem;
+}
+
+.work__skills{
+    font-family: var(--montserrat);
+    font-size: 0.9rem;
+    margin: 0.2rem 0.3rem;
+}
+
+.work__links{
+    margin: 0.2rem 0;
+    display: flex;
+    justify-content: center;
+    column-gap: 0.6rem;
+}
+
+.work__link{
+    text-decoration: none;
+    font-size: 0;
+}
+
+.work__link svg{
+    width: 1.5rem;
+    height: 1.5rem;
+    transition: 0.2s;
+}
+
+.work__link svg:hover{
+    transform: scale(1.2);
+}
