@@ -22,6 +22,7 @@ html {
 }
 
 header {
+    z-index: 1;
     position: fixed;
     top: 0;
     right: 0;
@@ -79,27 +80,26 @@ header {
     box-shadow: 2px -6px 1rem var(--shadow);
 }
 
-.info {
-    text-align: center;
+.info__text{
+    font-family: var(--montserrat);
+    font-size: 1.6rem;
+    font-weight: var(--weight-medium);
+    opacity: 0.65;
 }
 
 .info .info__name {
+    margin: 0.3rem 0;
     font-family: var(--raleway);
     font-weight: var(--weight-bold);
     font-size: 1.8rem;
 }
 
 .info .info__direction {
-    margin: 0.8rem 0;
     font-family: var(--montserrat);
-    font-weight: var(--weight-medium);
     font-size: 1.4rem;
+    opacity: 0.65;
 }
 
-.info .info__description {
-    font-family: var(--montserrat);
-    max-width: 20rem;
-}
 
 main .title {
     padding: 2.5rem 0.5rem 0;
@@ -136,6 +136,12 @@ main .title {
 .skills__item svg {
     width: 8rem;
     height: 8rem;
+    transition: 0.3s;
+}
+
+.skills__item svg:hover{
+    cursor: pointer;
+    transform: scale(1.05);
 }
 
 .skills__item-title {
@@ -166,11 +172,11 @@ main .title {
     width: 17rem;
     max-height: 13rem;
     border-radius: 0.2rem;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 .work__image:hover {
-    transform: scale(1.04,1.05);
+    transform: scale(1.03,1.04);
     cursor: pointer;
 }
 
@@ -214,4 +220,13 @@ main .title {
 
 .work__link svg:hover{
     transform: scale(1.2);
+}
+
+.works__group{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 3rem 4rem;
 }
