@@ -339,6 +339,7 @@ main .title {
 }
 
 .footer__copyright {
+    margin-bottom: 0.3rem;
     font-family: var(--raleway);
     font-weight: var(--weight-regular);
     font-size: 0.7rem;
@@ -375,6 +376,13 @@ main .title {
     max-width: 90vw;
     max-height: 90vh;
 }
+
+main .icons__item svg, .footer .icons__item svg {
+    width: 1.8rem;
+    height: 1.8rem;
+    transition: 0.2s;
+}
+
 
 @media screen and (max-width: 768px) {
     html {
