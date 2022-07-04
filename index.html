@@ -11,16 +11,18 @@
           rel="stylesheet">
 </head>
 <body>
-<header>
-    <div class="links">
-        <a href="#main" class="links__item">About</a>
-        <a href="#skills" class="links__item">Skills</a>
-        <a href="#works" class="links__item">Works</a>
-        <a href="#contacts" class="links__item">Contacts</a>
-    </div>
+<header class="header">
+    <nav class="links">
+        <ul class="links__list">
+            <li><a href="#main" class="links__item">Main</a></li>
+            <li><a href="#about" class="links__item">About</a></li>
+            <li><a href="#skills" class="links__item">Skills</a></li>
+            <li><a href="#works" class="links__item">Works</a></li>
+        </ul>
+    </nav>
 </header>
 <main>
-    <div class="about content-wrapper" id="main">
+    <div class="main content-wrapper" id="main">
         <div class="info">
             <div class="info__text">Hello, I'm</div>
             <div class="info__name">Oleg Yanusik</div>
@@ -52,10 +54,41 @@
                     </svg>
                 </a>
             </div>
-            <a class="info__button" target="_blank" href="https://drive.google.com/file/d/1TWciZGb8cZNYcf2xRN4wIG2LTJnYCNq3/view?usp=sharing">See my resume</a>
+            <a class="info__button" target="_blank"
+               href="https://drive.google.com/file/d/1OFvHbulN92RI5Ns37H25f0yKivmassCR/view?usp=sharing">See my
+                resume</a>
         </div>
         <div class="avatar">
             <img class="avatar__img" src="images/me.jpg" alt="avatar"/>
+        </div>
+    </div>
+    <div class="about content-wrapper" id="about">
+        <div class="about__content">
+            <div class="about__title">About me</div>
+            <div class="about__description">Who am I</div>
+            <div class="about__text">
+                Hey, I'm 20 and I'm frontend developer. I'm studying at BSUIR at faculty of information security.
+                I started learning of JavaScript and React more than one year ago. Eight months ago I completed React
+                courses, after which I successfully passed an interview for an internship.
+                I have spent the last seven months developing my skills as a frontend developer for Dev Incubator,
+                where I implemented six projects under the supervision of mentors.
+                Here I greatly improved my skills in application development, and now I'm ready to work on real
+                projects.
+                I'm a responsible, hardworking, action-oriented, polite and attentive person and can easily
+                find a common language with other people. Also, I'm open to relocation.
+            </div>
+            <div class="about__links">
+                <div class="about__link">
+                    <a class="info__button" target="_blank"
+                       href="https://drive.google.com/file/d/1OFvHbulN92RI5Ns37H25f0yKivmassCR/view?usp=sharing">See my
+                        resume</a>
+                </div>
+                <div class="about__link">
+                    <a class="info__button"
+                       href="#works">See my
+                        works</a>
+                </div>
+            </div>
         </div>
     </div>
     <div class="skills content-wrapper" id="skills">
@@ -347,5 +380,48 @@
         </div>
     </div>
 </main>
+<footer class="footer">
+    <div class="footer__content">
+        <div class="footer__title">
+            Follow me
+        </div>
+        <div class="icons">
+            <a class="icons__item" href="https://github.com/oleg3555" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="st4">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+            </a>
+            <a class="icons__item" href="https://www.linkedin.com/in/oleg-yanusik-1b4458236/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                    <g fill="none">
+                        <path d="M0 18.338C0 8.216 8.474 0 18.92 0h218.16C247.53 0 256 8.216 256 18.338v219.327C256 247.79 247.53 256 237.08 256H18.92C8.475 256 0 247.791 0 237.668V18.335z"
+                              fill="#069"/>
+                        <path d="M77.796 214.238V98.986H39.488v115.252H77.8zM58.65 83.253c13.356 0 21.671-8.85 21.671-19.91-.25-11.312-8.315-19.915-21.417-19.915-13.111 0-21.674 8.603-21.674 19.914 0 11.06 8.312 19.91 21.169 19.91h.248zM99 214.238h38.305v-64.355c0-3.44.25-6.889 1.262-9.346 2.768-6.885 9.071-14.012 19.656-14.012 13.858 0 19.405 10.568 19.405 26.063v61.65h38.304v-66.082c0-35.399-18.896-51.872-44.099-51.872-20.663 0-29.738 11.549-34.78 19.415h.255V98.99H99.002c.5 10.812-.003 115.252-.003 115.252z"
+                              fill="#fff"/>
+                    </g>
+                </svg>
+            </a>
+            <a class="icons__item" href="https://vk.com/id156285247" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2500" height="2500" viewBox="0 0 192 192">
+                    <g fill="none" fill-rule="evenodd">
+                        <path fill="#3775bd"
+                              d="M66.56 0h58.88C179.2 0 192 12.8 192 66.56v58.88c0 53.76-12.8 66.56-66.56 66.56H66.56C12.8 192 0 179.2 0 125.44V66.56C0 12.8 12.8 0 66.56 0z"/>
+                        <path fill="#FFF"
+                              d="M157.234 66.146c.89-2.966 0-5.146-4.234-5.146h-14c-3.56 0-5.2 1.883-6.09 3.96 0 0-7.12 17.353-17.206 28.625-3.263 3.263-4.746 4.301-6.526 4.301-.89 0-2.178-1.038-2.178-4.004V66.146c0-3.56-1.033-5.146-4-5.146H81c-2.224 0-3.562 1.652-3.562 3.218 0 3.375 5.042 4.153 5.562 13.645V98.48c0 4.52-.816 5.34-2.596 5.34-4.746 0-16.29-17.432-23.138-37.377C55.924 62.566 54.578 61 51 61H37c-4 0-4.8 1.883-4.8 3.96 0 3.708 4.747 22.1 22.1 46.424C65.869 127.995 82.168 137 97 137c8.9 0 10-2 10-5.445V119c0-4 .843-4.798 3.661-4.798 2.077 0 5.636 1.038 13.943 9.047C134.096 132.742 135.66 137 141 137h14c4 0 6-2 4.846-5.947-1.262-3.934-5.794-9.64-11.808-16.406-3.263-3.857-8.158-8.01-9.64-10.086-2.077-2.67-1.484-3.857 0-6.23 0 0 17.056-24.027 18.836-32.185z"/>
+                    </g>
+                </svg>
+            </a>
+        </div>
+    </div>
+    <div class="footer__copyright">© Oleg Yanusik, all rights reserved</div>
+</footer>
+<div class="popup">
+    <div class="popup__body">
+        <div class="popup__image">
+            <img src="" alt="popup-image"/>
+        </div>
+    </div>
+</div>
+<script src="index.js"></script>
 </body>
 </html>
