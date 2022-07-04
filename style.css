@@ -311,7 +311,7 @@ main .title {
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 1rem;
-    padding: 3rem 0.5rem;
+    padding: 3rem 2rem;
 }
 
 .footer {
@@ -383,6 +383,11 @@ main .icons__item svg, .footer .icons__item svg {
     transition: 0.2s;
 }
 
+@media screen and (max-width: 1048px){
+    .works__group{
+        padding: 3rem 0.5rem;
+    }
+}
 
 @media screen and (max-width: 768px) {
     html {
